@@ -8,7 +8,13 @@ class CrawlingController {
 
     @GetMapping("/crawlingController/start")
     fun crawlingStart() : String {
-        return "he"
+        print("Crawling start")
+        return "/crawl/crawl_result"
     }
 
+    @GetMapping("/crawlingController/dismiss")
+    fun crawlingStop() : String {
+        print("Crawling Dismissed")
+        return "/crawl/crawl_result"
+    }
 }
