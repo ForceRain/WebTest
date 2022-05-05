@@ -2,10 +2,12 @@ package com.example.WebTest.Crawling
 
 import org.springframework.stereotype.Service
 
+// CrawlingList -- Dao
 
 @Service
 class CrawlingServiceImpl : CrawlingService {
     private lateinit var crawlingList : List<String>
+
 
     override fun getList() {
         print("크롤링 리스트를 가져옵니다.")
@@ -13,7 +15,6 @@ class CrawlingServiceImpl : CrawlingService {
     }
 
     override fun startConnection() {
-        super.startConnection()
 
     }
 }
